@@ -1,5 +1,5 @@
 # Desafio Pipeline de Dados - Secretaria de Saúde do Recife
- 
+
 **Desenvolvedor do projeto**: João Paulo Oliveira Nolasco  
 **Data de entrega**: 31/01/2025  
 
@@ -9,11 +9,12 @@
 
 1. [Credenciais do Banco de Dados](#credenciais-do-banco-de-dados)
 2. [Resumo do Projeto](#resumo-do-projeto)
-3. [Arquitetura do Pipeline](#arquitetura-do-pipeline)
-4. [Ferramentas Utilizadas](#ferramentas-utilizadas)
-5. [Consultas SQL](#consultas-sql)
-6. [Organização do Repositório](#organização-do-repositório)
-7. [Conclusão](#conclusão)
+3. [Descrição do Dataset](#descrição-do-dataset)
+4. [Arquitetura do Pipeline](#arquitetura-do-pipeline)
+5. [Ferramentas Utilizadas](#ferramentas-utilizadas)
+6. [Consultas SQL](#consultas-sql)
+7. [Organização do Repositório](#organização-do-repositório)
+8. [Conclusão](#conclusão)
 
 ---
 
@@ -36,9 +37,24 @@ Este projeto consiste na construção de um **pipeline de dados** para processam
 
 ---
 
+## Descrição do Dataset
+
+O **dataset** utilizado contém informações detalhadas sobre a distribuição de medicamentos realizados pela **Secretaria de Saúde do Recife**. Ele foi coletado de uma plataforma pública da prefeitura e abrange dados como:
+
+- Nome do medicamento
+- Quantidade distribuída
+- Classe do produto
+- Bairro de distribuição
+
+A escolha desse conjunto de dados se deu pela relevância e impacto direto na saúde pública, fornecendo uma visão da distribuição de medicamentos essenciais para a população de Recife. Esse tipo de dado pode ser analisado para ajudar a entender as áreas com maior demanda de medicamentos, identificar padrões de consumo e, consequentemente, melhorar a logística e a alocação de recursos. Além disso, oferece insights para o planejamento de políticas públicas de saúde.
+
+---
+
 ## Arquitetura do Pipeline
 
 A arquitetura do pipeline segue o modelo **Medalhão**, que organiza os dados em três camadas:
+
+![image](https://github.com/user-attachments/assets/035da02e-58ab-4921-b553-f8a395702a0b)
 
 1. **Camada Bronze**: Armazena os dados brutos extraídos de fontes externas, sem nenhuma alteração.
 2. **Camada Silver**: Contém toda a parte de limpeza, tratamento e transformação dos dados.
@@ -55,6 +71,7 @@ A arquitetura do pipeline segue o modelo **Medalhão**, que organiza os dados em
 - **Jupyter Notebook**: Ambiente interativo para desenvolvimento do pipeline.
 
 ---
+
 ## Consultas SQL
 
 Duas consultas principais foram realizadas, e os resultados foram carregados na camada **Gold**:
@@ -65,7 +82,6 @@ Duas consultas principais foram realizadas, e os resultados foram carregados na 
 ### Justificativa para Escolha das Consultas
 
 As consultas foram escolhidas para fornecer um recorte interessante e pertinente para um posterior trabalho de analistas/cientistas de dados. A ideia aqui foi realmente deixar uma consulta bem aberta e com possibilidades de análises sobre elas, e não já fazer a query com a análise minuciosa já feita. As queries trazem recortes sobre a distribuição geográfica dos medicamentos e a diversidade de classes de produtos. A consulta por bairro permite identificar áreas com maior demanda de medicamentos, enquanto a consulta por classe ajuda a entender quais tipos de medicamentos são mais distribuídos. Essas consultas oferecem uma visão clara e detalhada do panorama da distribuição de medicamentos na cidade.
-
 
 ---
 
@@ -84,7 +100,12 @@ A estrutura do repositório é organizada da seguinte forma:
 
 ## Conclusão
 
-Este projeto demonstrou a construção de um pipeline de dados eficiente e escalável, utilizando a arquitetura Medalhão para organizar e processar os dados. Ele pode ser expandido para incluir novas consultas analíticas e, com mais tempo, melhorias como a automação da atualização dos dados e a orquestração do pipeline de ETL.
+Este projeto proporcionou uma excelente oportunidade de aplicar conceitos fundamentais de **engenharia de dados** em um contexto real, utilizando dados sobre a distribuição de medicamentos pela **Prefeitura do Recife**. A arquitetura **Medalhão** foi adotada para estruturar o pipeline em três camadas distintas: **Bronze**, **Silver** e **Gold**, organizando os dados de forma eficiente. A camada **Bronze** armazenou os dados brutos, a **Silver** continha os dados tratados e a **Gold** foi a camada final para consultas analíticas. Esse processo de organização permitiu uma estrutura robusta e escalável, ideal para análise de dados.
 
-Para mais detalhes sobre o projeto, consulte o código e o relatório completo no repositório.
+As transformações realizadas nos dados, como a **limpeza de valores nulos**, **normalização de colunas** e **ajustes de tipos de dados**, foram essenciais para garantir que os dados estivessem prontos para análises mais detalhadas. O uso do **Docker** para rodar o banco de dados PostgreSQL foi uma experiência valiosa, permitindo a criação de um ambiente isolado e facilmente replicável, embora tenha exigido esforços adicionais na configuração inicial.
 
+### Pontos de Melhoria
+
+Uma melhoria importante que eu gostaria de implementar, caso tivesse mais tempo, seria a **automação do processo de atualização dos dados**. Isso garantiria que o pipeline estivesse sempre atualizado com as informações mais recentes, sem a necessidade de intervenção manual. Para isso, ferramentas de **orquestração de pipelines**, como **Apache Airflow** ou **Prefect**, poderiam ser utilizadas para agendar, monitorar e gerenciar a execução dos processos ETL de maneira mais eficiente. A automação garantiria que as atualizações de dados ocorressem automaticamente, conforme o arquivo original fosse atualizado no portal da Prefeitura, tornando o pipeline mais robusto e menos dependente de ações manuais.
+
+Além disso, a **orquestração** do pipeline poderia coordenar todas as etapas do processo (extração, transformação e carregamento), proporcionando uma solução mais escalável e eficiente, com maior confiabilidade e menos necessidade de supervisão constante. Com essas melhorias, o pipeline seria mais autossuficiente e poderia ser utilizado em produção de forma mais eficiente e confiável.
