@@ -1,9 +1,6 @@
 # Desafio-Secsaude
 
-# Desafio Pipeline de Dados - Secretaria de Saúde do Recife
-**Vaga**: Engenheiro de Dados Júnior - GGMA  
-**Data**: 31/01/2025  
-**Candidato**: João Paulo Oliveira Nolasco
+# Desafio Pipeline de Dados - Secretaria de Saúde do Recife  
 
 ---
 
