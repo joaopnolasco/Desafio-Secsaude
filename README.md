@@ -1,8 +1,7 @@
 # Desafio Pipeline de Dados - Secretaria de Saúde do Recife
-
-**Nível**: Engenheiro de Dados Júnior  
-**Candidato**: João Paulo Oliveira Nolasco  
-**Data**: 31/01/2025  
+ 
+**Desenvolvedor do projeto**: João Paulo Oliveira Nolasco  
+**Data de entrega**: 31/01/2025  
 
 ---
 
@@ -41,9 +40,9 @@ Este projeto consiste na construção de um **pipeline de dados** para processam
 
 A arquitetura do pipeline segue o modelo **Medalhão**, que organiza os dados em três camadas:
 
-1. **Camada Bronze**: Armazena os dados brutos extraídos de um arquivo CSV.
-2. **Camada Silver**: Contém os dados transformados e preparados para análise.
-3. **Camada Gold**: Armazena os dados finais com informações analíticas detalhadas.
+1. **Camada Bronze**: Armazena os dados brutos extraídos de fontes externas, sem nenhuma alteração.
+2. **Camada Silver**: Contém toda a parte de limpeza, tratamento e transformação dos dados.
+3. **Camada Gold**: Armazena os dados finais com análises e consultas que geram informação.
 
 ---
 
@@ -56,15 +55,17 @@ A arquitetura do pipeline segue o modelo **Medalhão**, que organiza os dados em
 - **Jupyter Notebook**: Ambiente interativo para desenvolvimento do pipeline.
 
 ---
-
 ## Consultas SQL
 
-Duas principais consultas analíticas foram realizadas na camada **Silver**, e os resultados carregados na camada **Gold**:
+Duas consultas principais foram realizadas, e os resultados foram carregados na camada **Gold**:
 
-1. **Distribuição por Bairro**: Quantidade total de medicamentos distribuídos por bairro.
-2. **Distribuição por Classe de Produto**: Quantidade total de medicamentos por classe de produto.
+1. **Consulta por Bairro**: Agrupa os dados por bairro, somando a quantidade de medicamentos distribuídos e contando o número de produtos distintos por bairro.
+2. **Consulta por Classe de Produto**: Agrupa os dados por classe de produto, mostrando o número de produtos disponíveis e o número de bairros atendidos por cada classe.
 
-Essas consultas ajudam a analisar a distribuição geográfica dos medicamentos e a diversidade de produtos disponíveis.
+### Justificativa para Escolha das Consultas
+
+As consultas foram escolhidas para fornecer um recorte interessante e pertinente para um posterior trabalho de analistas/cientistas de dados. A ideia aqui foi realmente deixar uma consulta bem aberta e com possibilidades de análises sobre elas, e não já fazer a query com a análise minuciosa já feita. As queries trazem recortes sobre a distribuição geográfica dos medicamentos e a diversidade de classes de produtos. A consulta por bairro permite identificar áreas com maior demanda de medicamentos, enquanto a consulta por classe ajuda a entender quais tipos de medicamentos são mais distribuídos. Essas consultas oferecem uma visão clara e detalhada do panorama da distribuição de medicamentos na cidade.
+
 
 ---
 
