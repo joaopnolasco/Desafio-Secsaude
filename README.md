@@ -41,7 +41,7 @@ Este projeto consiste na construção de um **pipeline de dados** para processam
 
 O **dataset** utilizado contém informações detalhadas sobre a distribuição de medicamentos realizados pela **Secretaria de Saúde do Recife**. Ele foi coletado de uma plataforma pública da prefeitura e abrange dados como:
 
-- Nome do medicamento
+- Nome do produto
 - Quantidade distribuída
 - Classe do produto
 - Bairro de distribuição
