@@ -1,8 +1,0 @@
-pandas==2.2.3
-numpy==2.2.2
-SQLAlchemy==2.0.37
-psycopg2-binary==2.9.10
-requests==2.31.0
-ipython==8.21.0
-notebook==7.0.6
-
