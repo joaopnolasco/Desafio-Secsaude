@@ -33,7 +33,7 @@ O banco de dados foi configurado utilizando o PostgreSQL dentro de um container 
 
 ## Resumo do Projeto
 
-Este projeto consiste na construção de um **pipeline de dados** para processamento e análise de informações sobre medicamentos distribuídos pela **Secretaria de Saúde do Recife**. O pipeline organiza os dados em três camadas de processamento, utilizando a **Arquitetura Medalhão**.
+Este projeto consiste na construção de um **pipeline de dados** para processamento e análise de informações sobre medicamentos disponíveis na cidade do Recife. O pipeline organiza os dados em três camadas de processamento, utilizando a **Arquitetura Medalhão**.
 
 ---
 
