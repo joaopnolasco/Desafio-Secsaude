@@ -33,7 +33,11 @@ O banco de dados foi configurado utilizando o PostgreSQL dentro de um container 
 
 ## Resumo do Projeto
 
-Este projeto consiste na construção de um **pipeline de dados** para processamento e análise de informações sobre medicamentos disponíveis na cidade do Recife. O pipeline organiza os dados em três camadas de processamento, utilizando a **Arquitetura Medalhão**.
+Este projeto consiste na construção de um pipeline de dados utilizando Python e SQL. Mais especificamente, conforme foi solicitado:
+
+Foi Construído um pipeline para extrair, elaborar duas consultas sobre esses dados, usando SQL, e por fim um breve relatório sobre o projeto.
+
+Este read.me foca da descrição resumida do projeto e principalmente na organização do repositório, e informações essenciais para a execução. Para conferir detalhadamente os detalhes do código, projeto e insights, confira o relatório juntamente com os scripts disponibilizados na pasta.
 
 ---
 
