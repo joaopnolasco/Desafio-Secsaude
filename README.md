@@ -1,6 +1,6 @@
 # Desafio Pipeline de Dados - Secretaria de Saúde do Recife
 
-**Vaga**: Engenheiro de Dados Júnior  
+**Nível**: Engenheiro de Dados Júnior  
 **Candidato**: João Paulo Oliveira Nolasco  
 **Data**: 31/01/2025  
 
