@@ -46,8 +46,7 @@ O **dataset** utilizado contém informações detalhadas sobre a distribuição 
 - Classe do produto
 - Bairro de distribuição
 
-A escolha desse conjunto de dados se deu pela relevância e impacto direto na saúde pública, fornecendo uma visão da distribuição de medicamentos essenciais para a população de Recife. Esse tipo de dado pode ser analisado para ajudar a entender as áreas com maior demanda de medicamentos, identificar padrões de consumo e, consequentemente, melhorar a logística e a alocação de recursos. Além disso, oferece insights para o planejamento de políticas públicas de saúde.
-
+A escolha desse conjunto de dados se deu pela relevância e impacto direto na saúde pública, fornecendo uma visão da distribuição de medicamentos essenciais para a população de Recife. Esse tipo de dado pode ser analisado para ajudar a entender as áreas com maior demanda de medicamentos, identificar padrões de consumo e, consequentemente, melhorar a logística e a alocação de recursos.
 ---
 
 ## Arquitetura do Pipeline
