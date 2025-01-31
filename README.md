@@ -1,6 +1,7 @@
-# Projeto data engineer: Pipeline de Dados - Secretaria de Saúde do Recife
+# Projeto: Pipeline de Dados - Secretaria de Saúde do Recife
 
 **Desenvolvedor do projeto**: João Paulo Oliveira Nolasco  
+**Área contemplada** Engenharia de Dados
 **Data de entrega**: 31/01/2025  
 
 ---
