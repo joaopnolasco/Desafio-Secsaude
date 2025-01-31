@@ -2,6 +2,7 @@
 
 **Desenvolvedor do projeto**: João Paulo Oliveira Nolasco  
 **Área técnica**: Engenharia de Dados
+
 **Data de entrega**: 31/01/2025  
 
 ---
