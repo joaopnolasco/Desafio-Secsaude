@@ -17,6 +17,7 @@
 6. [Consultas SQL](#consultas-sql)
 7. [Organização do Repositório](#organização-do-repositório)
 8. [Conclusão](#conclusão)
+9. [Conteúdo Extra](#Conteúdo Extra)
 
 ---
 
@@ -134,3 +135,12 @@ As transformações realizadas nos dados, como a **limpeza de valores nulos**, *
 Uma melhoria importante que eu gostaria de implementar, caso tivesse mais tempo, seria a **automação do processo de atualização dos dados**. Isso garantiria que o pipeline estivesse sempre atualizado com as informações mais recentes, sem a necessidade de intervenção manual. Para isso, ferramentas de **orquestração de pipelines**, como **Apache Airflow** ou **Prefect**, poderiam ser utilizadas para agendar, monitorar e gerenciar a execução dos processos ETL de maneira mais eficiente. A automação garantiria que as atualizações de dados ocorressem automaticamente, conforme o arquivo original fosse atualizado no portal da Prefeitura, tornando o pipeline mais robusto e menos dependente de ações manuais.
 
 Além disso, a **orquestração** do pipeline poderia coordenar todas as etapas do processo (extração, transformação e carregamento), proporcionando uma solução mais escalável e eficiente, com maior confiabilidade e menos necessidade de supervisão constante. Com essas melhorias, o pipeline seria mais autossuficiente e poderia ser utilizado em produção de forma mais eficiente e confiável.
+
+## Conteúdo Extra
+
+Embora não tenha sido solicitado no escopo do projeto, decidi criar uma **query adicional** para realizar uma análise de dados curta em cima do **schema Gold**. Essa análise foi feita de forma opcional, visando explorar ainda mais os dados disponíveis.
+
+Esse material bônus está localizado na pasta **`Extra`** do repositório. Nela, você encontrará um **relatório explicando** o objetivo e os detalhes dessa consulta adicional, bem como o **script** utilizado para gerar os resultados.
+
+A visualização deste conteúdo é **opcional** e não faz parte dos requisitos do projeto, mas pode ser útil para obter uma análise complementar sobre os dados.
+
