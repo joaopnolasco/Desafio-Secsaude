@@ -62,11 +62,24 @@ A arquitetura do pipeline segue o modelo **Medalhão**, que organiza os dados em
 
 ![image](https://github.com/user-attachments/assets/035da02e-58ab-4921-b553-f8a395702a0b)
 
-1. **Camada Bronze**: Armazena os dados brutos extraídos de fontes externas, sem nenhuma alteração.
-2. **Camada Silver**: Contém toda a parte de limpeza, tratamento e transformação dos dados.
-3. **Camada Gold**: Armazena os dados finais com análises e consultas que geram informação.
+1. **Camada Bronze**:  
+   - Armazena os dados brutos extraídos da fonte original sem qualquer tipo de modificação.  
+   - Os dados são carregados exatamente como foram obtidos, preservando sua estrutura e possíveis inconsistências para manter um histórico fiel da extração.  
+   - Essa camada serve como um backup para reprocessamento, caso ajustes sejam necessários nas transformações subsequentes.  
 
----
+2. **Camada Silver**: Contém toda a parte de limpeza, tratamento e transformação dos dados.  
+   - **Limpeza de caracteres especiais**, garantindo a padronização de nomes, como no caso de **"AGENTE URICOSÚRICO"**, que possuía caracteres que precisaram ser tratados.  
+   - **Substituição de valores nulos**, onde colunas de texto receberam `"Sem informação"`, enquanto colunas numéricas foram preenchidas com `0`.  
+   - **Conversão de tipos de dados**, transformando colunas de texto para valores numéricos (`quantidade`), garantindo que identificadores fossem mantidos como `str` e ajustando colunas de data para `datetime`.  
+   - **Normalização de nomes de colunas**, removendo espaços e convertendo para letras minúsculas para facilitar consultas.  
+   - **Criação de identificador único (`ID`)**, assegurando a unicidade dos registros.  
+   - **Inclusão das colunas `DT_CREATED` e `DT_UPDATED`**, para registrar quando os dados foram inseridos ou modificados.  
+
+3. **Camada Gold**:  
+   - Armazena os dados prontos para análise, consolidando informações transformadas na camada Silver.  
+   - **Geração de tabelas otimizadas para consultas**, permitindo análises mais rápidas e eficientes sobre o fornecimento de medicamentos.   
+   - Os dados nesta camada estão estruturados de forma a possibilitar extrações diretas para dashboards e relatórios finais.  
+
 
 ## Ferramentas Utilizadas
 
