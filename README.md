@@ -45,10 +45,10 @@ Este read.me foca da descrição resumida do projeto e principalmente na organiz
 
 ## Descrição do Dataset
 
-O **dataset** utilizado contém informações detalhadas sobre a distribuição de medicamentos realizados pela **Secretaria de Saúde do Recife**. Ele foi coletado de uma plataforma pública da prefeitura e abrange dados como:
+O **dataset** utilizado contém informações detalhadas sobre medicamentos disponíveis nas unidades de saúde do município do Recife. Ele foi coletado de uma plataforma pública da prefeitura e abrange dados como:
 
-- Nome do produto
-- Quantidade distribuída
+- Produto
+- Quantidade disponível
 - Classe do produto
 - Bairro de distribuição
 
