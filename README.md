@@ -98,7 +98,7 @@ Duas consultas principais foram realizadas, e os resultados foram carregados na 
 
 ![Captura de tela 2025-01-31 120710](https://github.com/user-attachments/assets/5248f4a5-e55e-44ce-a01c-b4c002ac76b4)
 
-2. **Consulta por Classe de Produto**: Agrupa os dados por classe de produto, mostrando o número de produtos disponíveis e o número de bairros atendidos por cada classe.
+2. **Consulta por Classe de Produto**: Agrupa os dados por classe de produto, mostrando o número de produtos **distintos** disponíveis e o número de bairros atendidos por cada classe.
 
 ![Captura de tela 2025-01-31 113249](https://github.com/user-attachments/assets/70229c1d-7bb6-40db-b808-23ead75cbdbf)
 
