@@ -67,8 +67,9 @@ A arquitetura do pipeline segue o modelo **Medalhão**, que organiza os dados em
    - Os dados são carregados exatamente como foram obtidos, preservando sua estrutura e possíveis inconsistências para manter um histórico fiel da extração.  
    - Essa camada serve como um backup para reprocessamento, caso ajustes sejam necessários nas transformações subsequentes.  
 
-2. **Camada Silver**: Contém toda a parte de limpeza, tratamento e transformação dos dados.  
-   - **Limpeza de caracteres especiais**, garantindo a padronização de nomes, como no caso de **"AGENTE URICOSÚRICO"**, que possuía caracteres que precisaram ser tratados.  
+2. **Camada Silver**: 
+   - Contém toda a parte de limpeza, tratamento e transformação dos dados.  
+   - **Limpeza de caracteres especiais**, garantindo a padronização de nomes, como no caso de **"AGENTE URICOSÃRICO"**, que possuía caracteres que precisaram ser tratados.  
    - **Substituição de valores nulos**, onde colunas de texto receberam `"Sem informação"`, enquanto colunas numéricas foram preenchidas com `0`.  
    - **Conversão de tipos de dados**, transformando colunas de texto para valores numéricos (`quantidade`), garantindo que identificadores fossem mantidos como `str` e ajustando colunas de data para `datetime`.  
    - **Normalização de nomes de colunas**, removendo espaços e convertendo para letras minúsculas para facilitar consultas.  
