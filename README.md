@@ -96,7 +96,10 @@ A arquitetura do pipeline segue o modelo **Medalhão**, que organiza os dados em
 Duas consultas principais foram realizadas, e os resultados foram carregados na camada **Gold**:
 
 1. **Consulta por Bairro**: Agrupa os dados por bairro, somando a quantidade de medicamentos distribuídos e contando o número de produtos distintos por bairro.
+![Captura de tela 2025-01-31 120710](https://github.com/user-attachments/assets/5248f4a5-e55e-44ce-a01c-b4c002ac76b4)
+
 2. **Consulta por Classe de Produto**: Agrupa os dados por classe de produto, mostrando o número de produtos disponíveis e o número de bairros atendidos por cada classe.
+![Captura de tela 2025-01-31 113249](https://github.com/user-attachments/assets/70229c1d-7bb6-40db-b808-23ead75cbdbf)
 
 ### Justificativa para Escolha das Consultas
 
