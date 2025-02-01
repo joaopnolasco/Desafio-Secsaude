@@ -52,6 +52,8 @@ O **dataset** utilizado contém informações detalhadas sobre medicamentos disp
 - Classe do produto
 - Bairro de distribuição
 
+Link para acesso a URL do dataset: http://dados.recife.pe.gov.br/dataset/443797b4-5c9c-421c-8509-62eb7e6d2fc9/resource/4c52c602-6b6f-4ca5-bcb9-a64248578058/download/medicamentos.csv
+
 A escolha desse conjunto de dados se deu pela relevância e impacto direto na saúde pública, fornecendo uma visão da distribuição de medicamentos essenciais para a população de Recife. Esse tipo de dado pode ser analisado para ajudar a entender as áreas com maior demanda de medicamentos, identificar padrões e, consequentemente, melhorar a logística e a alocação de recursos. Além disso, acheu extremamente pertinente um dataset na área da saúde pois já "simularia" uma tarefa de engenheiro de dados na Secretária de Saúde do Recife.
 
 ---
